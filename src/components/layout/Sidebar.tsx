@@ -37,7 +37,7 @@ export default function Sidebar() {
       <Box sx={{ p: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
         <BoardIcon color="primary" />
         <Typography variant="h6" fontWeight={700}>
-          Kanban
+          Kanban Ripple
         </Typography>
       </Box>
 

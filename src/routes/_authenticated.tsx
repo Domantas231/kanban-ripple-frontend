@@ -1,10 +1,14 @@
-import { createFileRoute, Outlet } from '@tanstack/react-router';
+import { createFileRoute, Outlet, redirect } from '@tanstack/react-router';
+import MainLayout from '../components/layout/MainLayout';
 
 export const Route = createFileRoute('/_authenticated')({
+  // Vėliau čia bus auth check:
+  // beforeLoad: async () => {
+  //   if (!isAuthenticated()) throw redirect({ to: '/login' });
+  // },
   component: () => (
-    <div>
-      <h1>Layout works</h1>
+    <MainLayout>
       <Outlet />
-    </div>
+    </MainLayout>
   ),
 });
